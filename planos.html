@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Função | Editor de Vídeo</title>
+</head>
+
+<body>
+
+  <!-- INICIO MODAL -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLoginTitulo">Entre na sua conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <div class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL -->
+
+  <nav class="navbar navbar-expand-md bg-light fixed-top p-3 box-shadow">
+    <a href="index.html" class="navbar-brand ml-3">
+      <img src="./img/logo.svg" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Funções</a>
+          <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+            <a class="dropdown-item" href="/funcao_dev.html">Dev Front-end</a>
+            <a class="dropdown-item" href="/funcao_editor.html">Editor de Vídeo</a>
+            <a class="dropdown-item" href="/funcao_designer.html">Designer</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        </li>
+        <li class=" nav-item">
+          <a class="btn btn-outline-primary ml-md-2" href="#">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class=" text-center my-5">
+      <span class="h6 d-block">Escolha seu plano</span>
+      <h1 class="display-4 text-primary">Quer contar com um dos meus serviços?</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md mb-5">
+        <div class="bg-light box-shadow rounded p-4">
+          <h2>Freela</h2>
+          <ul class="list-unstyled lista-plano">
+            <li>Experiência</li>
+            <li>Assistência Técnica</li>
+            <li>Suporte das 8h as 18h</li>
+            <li>Home Office</li>
+          </ul>
+          <form action="">
+            <div class="fomr-group">
+              <select class="inputFuncao bg-light" aria-label="Seleção de função">
+                <option selected>Selecione a função</option>
+                <option value="1">Dev Front-End</option>
+                <option value="2">Editor de Vídeo</option>
+                <option value="3">Designer</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a href="inscricao.html" class="btn btn-primary bnt-lg btn-block">Selecionar serviço</a>
+            </div>
+            <div class="col">
+              <span class="h4">Orçamento em até 24h</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-md mb-5">
+        <div class="bg-light box-shadow rounded p-4">
+          <h2>Fixo <span class="badge text-bg-success">Disponível</span></h2>
+          <ul class="list-unstyled lista-plano">
+            <li>Experiência</li>
+            <li>Fácil de trabalhar</li>
+            <li>Resolvedor de problemas</li>
+            <li>Home Office ou presencial no Rio de Janeiro</li>
+          </ul>
+          <form action="">
+            <div class="fomr-group">
+              <select class="inputFuncao bg-light" aria-label="Seleção de função">
+                <option selected>Selecione a função</option>
+                <option value="1">Dev Front-End</option>
+                <option value="2">Editor de Vídeo</option>
+                <option value="3">Designer</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a href="inscricao.html" class="btn btn-primary bnt-lg btn-block">Selecionar serviço</a>
+            </div>
+            <div class="col">
+              <span class="h4">A partir de R$5000/mês</span>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">FUNÇÕES</h4>
+          <ul class="list-unstyled">
+            <li><a href="./funcao_dev.html">Dev Front-End</a></li>
+            <li><a href="./funcao_editor.html">Editor</a></li>
+            <li><a href="./funcao_designer.html">Designer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>arturtoblib@hotmail.com</li>
+            <li>21 981365896</li>
+            <li>Seg. a Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.linkedin.com/in/arturtoblib/">LinkedIn</a></li>
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.facebook.com/artur.toblib">Facebook</a></li>
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.instagram.com/toblib_artur/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Artur Toblib | 2023 - Portfólio Bootstrap</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

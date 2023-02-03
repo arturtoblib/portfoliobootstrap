@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Site Bootstrap</title>
+</head>
+
+<body>
+
+  <!-- INICIO MODAL -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLoginTitulo">Entre na sua conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <div class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL -->
+
+  <nav class="navbar navbar-expand-md bg-light fixed-top p-3 box-shadow">
+    <a href="index.html" class="navbar-brand ml-3">
+      <img src="./img/logo.svg" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Funções</a>
+          <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+            <a class="dropdown-item" href="/funcao_dev.html">Dev Front-end</a>
+            <a class="dropdown-item" href="/funcao_editor.html">Editor de Vídeo</a>
+            <a class="dropdown-item" href="/funcao_designer.html">Designer</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        </li>
+        <li class=" nav-item">
+          <a class="btn btn-outline-primary ml-md-2" href="#">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">Possui alguma dúvida?</span>
+      <h2 class="display-4 text-primary">Fale conosco</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg mb-5">
+
+        <form class="bg-light box-shadow rounded p-4" action="">
+          <div class="mb-3">
+            <label for="clienteNome" class="form-label">Nome</label>
+            <input type="email" class="form-control" id="clienteNome">
+          </div>
+
+          <div class="mb-3">
+            <label for="clienteEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="clienteEmail">
+          </div>
+          <div class="form-group">
+            <label for="clienteMensagem">Mensagem</label>
+            <textarea id="clienteMensagem" class="form-control" rows="4" aria-label="With textarea"></textarea>
+
+          </div>
+          <button type="submit" class="btn btn-primary mt-4">Enviar Mensagem</button>
+        </form>
+      </div>
+
+      <div class="col-lg">
+        <h2 class="h6">ENDEREÇO</h2>
+        <a href=""><img class="img-fluid box-shadow rounded mb-4" src="./img/rj.jpg" alt="mapa"></a>
+        <h2 class="h6">DADOS DE CONTATO</h2>
+        <ul class="list-unstyled text-secondary">
+          <li>arturtoblib@hotmail.com</li>
+          <li>21 981365896</li>
+          <li>Seg. a Sex. das 8h às 18h</li>
+        </ul>
+        <h2 class="h6">REDES SOCIAIS</h2>
+        <ul class="list-unstyled text-secondary">
+          <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.linkedin.com/in/arturtoblib/">LinkedIn</a></li>
+          <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.facebook.com/artur.toblib">Facebook</a></li>
+          <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.instagram.com/toblib_artur/">Instagram</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">Dúvidas?</span>
+      <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+    </div>
+    <div class="row justify-content-center">
+
+      <div class="col-md-6 " id="perguntasFrequentes" data-children=".pergunta">
+        <div class="pergunta py-2 ">
+
+          <a class="lead btn-primary " data-bs-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false" aria-controls="pergunta1">Está disponível para freelas?</a>
+          <div class="collapse py-2" id="pergunta1">
+            <div class="card card-body">
+              <p>Sim. Entre em contato com o briefing do projeto e retornarei em menos de 24h.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <div class="pergunta  py-2">
+          <a class="lead btn-primary" data-bs-toggle="collapse" href="#pergunta2" role="button" aria-expanded="false" aria-controls="pergunta2">Em qual estado você mora?</a>
+          <div class="collapse py-2" id="pergunta2">
+            <div class="card card-body">
+              <p>Rio de Janeiro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <div class="pergunta  py-2">
+          <a class="lead btn-primary" data-bs-toggle="collapse" href="#pergunta3" role="button" aria-expanded="false" aria-controls="pergunta3">Quanto custa para trabalhar fulltime?</a>
+          <div class="collapse py-2" id="pergunta3">
+            <div class="card card-body">
+              <p>A partir de R$5000 CLT.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-divider"></div>
+
+      <div class="text-center my-4">
+        <p class="small m-1">FALE CONOSCO PARA MAIS DUVIDAS</p>
+        <a class="btn btn-primary btn-lg" href="contato.html">Entre em Contato</a>
+      </div>
+    </div>
+
+
+  </section>
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">FUNÇÕES</h4>
+          <ul class="list-unstyled">
+            <li><a href="./funcao_dev.html">Dev Front-End</a></li>
+            <li><a href="./funcao_editor.html">Editor</a></li>
+            <li><a href="./funcao_designer.html">Designer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>arturtoblib@hotmail.com</li>
+            <li>21 981365896</li>
+            <li>Seg. a Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.linkedin.com/in/arturtoblib/">LinkedIn</a></li>
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.facebook.com/artur.toblib">Facebook</a></li>
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.instagram.com/toblib_artur/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Artur Toblib | 2023 - Portfólio Bootstrap</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

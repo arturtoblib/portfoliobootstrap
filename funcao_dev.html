@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Função | Dev Front-End</title>
+</head>
+
+<body>
+
+  <!-- INICIO MODAL -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLoginTitulo">Entre na sua conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <div class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL -->
+
+  <nav class="navbar navbar-expand-md bg-light fixed-top p-3 box-shadow">
+    <a href="index.html" class="navbar-brand ml-3">
+      <img src="./img/logo.svg" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Funções</a>
+          <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+            <a class="dropdown-item" href="/funcao_dev.html">Dev Front-end</a>
+            <a class="dropdown-item" href="/funcao_editor.html">Editor de Vídeo</a>
+            <a class="dropdown-item" href="/funcao_designer.html">Designer</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        </li>
+        <li class=" nav-item">
+          <a class="btn btn-outline-primary ml-md-2" href="#">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container">
+    <div class=" text-center my-5">
+      <span class="h6 d-block">Dev Front-End</span>
+      <h1 class="display-4 text-primary">HTML, CSS, JS e Bootstrap</h1>
+      <div class="row">
+        <div class="col-md">
+          <img class="img-fluid mb-4" src="./img/dev.jpg" alt="dev1">
+          <img class="img-fluid mb-4" src="./img/dev-2.jpg" alt="dev2">
+          <img class="img-fluid mb-4" src="./img/dev-3.jpg" alt="dev3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class=" text-center my-5">
+      <span class="h6 d-block">Formação e certificados</span>
+      <h1 class="display-4 text-primary">Habilidades & Cursos</h1>
+    </div>
+    <table class="table table-responsive-md table-light table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Horas</th>
+          <th scope="col">Ano</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Origamid | HTML e CSS para Iniciantes</th>
+          <td>23h</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | CSS Flexbox Layout</th>
+          <td>3h</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | CSS Grid Layout</th>
+          <td>5h</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | CSS com SASS</th>
+          <td>6h</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | CSS Avançado: Posicionamento</th>
+          <td>9h</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | Javascript</th>
+          <td>37h</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | Bootstrap</th>
+          <td>5h</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | React</th>
+          <td>18h</td>
+          <td>A definir</td>
+        </tr>
+        <tr>
+          <th scope="row">Origamid | Typescript</th>
+          <td>11h</td>
+          <td>A definir</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4 class="h6">FUNÇÕES</h4>
+          <ul class="list-unstyled">
+            <li><a href="./funcao_dev.html">Dev Front-End</a></li>
+            <li><a href="./funcao_editor.html">Editor</a></li>
+            <li><a href="./funcao_designer.html">Designer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>arturtoblib@hotmail.com</li>
+            <li>21 981365896</li>
+            <li>Seg. a Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.linkedin.com/in/arturtoblib/">LinkedIn</a></li>
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.facebook.com/artur.toblib">Facebook</a></li>
+            <li><a class="btn btn-block btn-outline-secondary btn-sm mb-2" style="max-width: 140px;" href="https://www.instagram.com/toblib_artur/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Artur Toblib | 2023 - Portfólio Bootstrap</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
